@@ -1,3 +1,7 @@
+import PostList from "@/components/posts/PostList";
+
 export default function Home() {
-    return <div className="border h-screen">Hi Home page</div>;
+    return <div className="">
+        <PostList />
+    </div>;
 }

@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className=" w-full bg-card py-2 flex justify-start items-center rounded-lg">
                 <div className=" ">
                     <Image
-                        className=" rounded-full mx-2 border border-black"
+                        className=" rounded-full mx-3 border border-black"
                         // fill={true}
                         width={40}
                         height={40}
@@ -42,7 +42,7 @@ const Navbar = () => {
                         onClick={() => setActive(id)}
                         className={` ${
                             id === active ? "bg-[#218dfa] text-white" : ""
-                        } flex justify-start items-center p-2 px-6 gap-2 w-full hover:bg-[#4b9beb] cursor-pointer rounded `}
+                        } flex justify-start items-center p-2 px-10 gap-2 w-full hover:bg-[#4b9beb] cursor-pointer rounded `}
                     >
                         {item.icon} <span>{item.name}</span>
                     </Link>
