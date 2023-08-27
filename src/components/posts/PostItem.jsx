@@ -13,8 +13,8 @@ import { BsArrow90DegRight } from "react-icons/bs";
 
 const PostItem = ({ post }) => {
     return (
-        <div className="rounded shadow-lg bg-card flex flex-col gap-3 pt-2">
-            <div className="flex justify-between items-center px-3 border-b">
+        <div className="rounded shadow-lg bg-card flex flex-col  pt-2">
+            <div className="flex justify-between items-center px-3">
                 <div className="flex items-center gap-3 ">
                     <Image
                         className=" rounded-full  border border-black"
@@ -33,12 +33,13 @@ const PostItem = ({ post }) => {
                     <FaEllipsisH />
                 </div>
             </div>
+            <div className="w-full h-[1px] bg-[#ffffffc2] my-2" />
             <p className="px-2">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                 iste voluptas in possimus molestiae tenetur quia eos repellendus
                 id explicabo?
             </p>
-            <div className="relative min-h-[500px] w-full">
+            <div className="relative min-h-[500px] w-full my-2">
                 <Image
                     src="/assets/images/post.jpg"
                     fill={true}
@@ -46,6 +47,7 @@ const PostItem = ({ post }) => {
                 />
             </div>
             <p className="pl-2">10 likes and 12 comments</p>
+            <div className="w-full h-[1px] bg-[#ffffffc2] my-2" />
             <div className="text-xl flex justify-evenly items-center py-3">
                 <div className="flex items-center justify-around gap-3 cursor-pointer hover:bg-[#4b9beb]">
                     <AiFillLike />
